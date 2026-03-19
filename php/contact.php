@@ -1,23 +1,5 @@
 <?php
-/**
- * NANOBYTE X LLC — Contact Form Handler
- * php/contact.php
- *
- * Uses PHPMailer + Gmail SMTP for reliable email delivery.
- *
- * ─── ONE-TIME SETUP ──────────────────────────────────────
- * 1. Run in your project root:
- *       composer require phpmailer/phpmailer
- *    OR manually download PHPMailer and place it in php/PHPMailer/
- *
- * 2. Go to your Gmail account:
- *    → Google Account → Security → 2-Step Verification (enable it)
- *    → Then: myaccount.google.com/apppasswords
- *    → Create App Password for "Mail" → copy the 16-char password
- *
- * 3. Fill in SMTP_USER and SMTP_PASS below.
- * ─────────────────────────────────────────────────────────
- */
+
 
 declare(strict_types=1);
 
