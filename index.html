@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nanobyte X LLC – Expert IT Services in Consulting, Application Development, AI/ML, and Digital Transformation." />
+  <meta name="keywords" content="IT services, app development, AI, machine learning, web development, consulting, Linux, data analytics" />
+  <meta name="author" content="Nanobyte X LLC" />
+  <title>Nanobyte X LLC – Transforming Businesses Through Technology</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-close" onclick="closeMobile()">✕</button>
+    <a href="#home" onclick="closeMobile()">Home</a>
+    <a href="#services" onclick="closeMobile()">Services</a>
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#executives" onclick="closeMobile()">Executives</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav id="mainNav">
+    <a class="nav-logo" href="#home">
+      <img src="assets/img/logo.jpeg" alt="Nanobyte X LLC Logo" />
+      <div>
+        <div class="nav-logo-text">Nanobyte X</div>
+        <div class="nav-logo-sub">LLC</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#executives">Executives</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Get Started</a>
+    <div class="hamburger" onclick="openMobile()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════ -->
+  <section id="home">
+    <div class="hero-grid-lines"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Est. 2025 · Transforming Technology</div>
+      <h1 class="hero-title">
+        Transforming Businesses<br>Through <span class="accent">Technology</span>
+      </h1>
+      <p class="hero-subtitle">
+        Expert Services in Consulting, IT Solutions, Application Development,<br>AI/ML, and Digital Transformation
+      </p>
+      <div class="hero-btns">
+        <a href="#services" class="btn-primary">Explore Services</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="150">0</span>
+          <span class="stat-label">Clients Served</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="98">0</span>
+          <span class="stat-label">% Satisfaction</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="8">0</span>
+          <span class="stat-label">Core Services</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="5">0</span>
+          <span class="stat-label">Years Expert.</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-divider"></div>
+  </section>
+
+  <!-- TICKER BANNER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span class="ticker-item">Application Development</span>
+      <span class="ticker-item">AI &amp; Machine Learning</span>
+      <span class="ticker-item">Web Development</span>
+      <span class="ticker-item">IT Solutions</span>
+      <span class="ticker-item">Linux Open Source</span>
+      <span class="ticker-item">Data Analytics</span>
+      <span class="ticker-item">Consultancy</span>
+      <span class="ticker-item">Education &amp; Training</span>
+      <span class="ticker-item">Application Development</span>
+      <span class="ticker-item">AI &amp; Machine Learning</span>
+      <span class="ticker-item">Web Development</span>
+      <span class="ticker-item">IT Solutions</span>
+   <!------   <span class="ticker-item">Linux Open Source</span>--->
+      <span class="ticker-item">Data Analytics</span>
+      <span class="ticker-item">Consultancy</span>
+      <span class="ticker-item">Education &amp; Training</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       SERVICES SECTION
+  ══════════════════════════════════════ -->
+  <section id="services">
+    <div class="section-inner">
+      <div class="services-header reveal">
+        <div>
+          <div class="section-tag">What We Do</div>
+          <h2 class="section-title">Our <span>Services</span></h2>
+        </div>
+        <p class="section-desc">We deliver cutting-edge technology solutions tailored to your business needs — from design to deployment.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <div class="service-name">Application Development</div>
+          <p class="service-desc">Solving complex problems using a Design Thinking approach. We build scalable, robust applications tailored to your workflows.</p>
+          <div class="service-tags">
+            <span class="service-tag">Software</span>
+            <span class="service-tag">Mobile</span>
+            <span class="service-tag">API</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <div class="service-name">Data Analytics &amp; AI/ML</div>
+          <p class="service-desc">Smarter decisions through predictive analytics, customer insights, fraud detection, recommendation systems, and automated pipelines.</p>
+          <div class="service-tags">
+            <span class="service-tag">Analytics</span>
+            <span class="service-tag">ML Models</span>
+            <span class="service-tag">Insights</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <div class="service-name">Web Development</div>
+          <p class="service-desc">From technical wizardry to seamless online experiences — e-commerce, business portals, and portfolios that convert.</p>
+          <div class="service-tags">
+            <span class="service-tag">E-Commerce</span>
+            <span class="service-tag">SaaS</span>
+            <span class="service-tag">CMS</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🔧</div>
+          <div class="service-name">Application Maintenance</div>
+          <p class="service-desc">Constant updating, modifying, and optimizing your existing applications for peak performance, security, and reliability.</p>
+          <div class="service-tags">
+            <span class="service-tag">Security</span>
+            <span class="service-tag">Performance</span>
+            <span class="service-tag">Uptime</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🎯</div>
+          <div class="service-name">AI Lead Generation</div>
+          <p class="service-desc">Leverage AI-driven tools to identify high-quality leads, automate outreach, and enhance conversion rates for your business.</p>
+          <div class="service-tags">
+            <span class="service-tag">CRM</span>
+            <span class="service-tag">Leads</span>
+            <span class="service-tag">Automation</span>
+          </div>
+        </div>
+
+       <!---- <div class="service-card">
+          <div class="service-icon">🐧</div>
+          <div class="service-name">Linux Open Source</div>
+          <p class="service-desc">Harness the flexibility of Linux to customize your IT infrastructure, reduce costs, and scale efficiently with community-proven tech.</p>
+          <div class="service-tags">
+            <span class="service-tag">Server</span>
+            <span class="service-tag">Email</span>
+            <span class="service-tag">Support</span>
+          </div>
+        </div>--->
+
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <div class="service-name">IT Solution Designing</div>
+          <p class="service-desc">Custom IT solutions that optimize infrastructure, streamline processes, enhance security, and drive business innovation.</p>
+          <div class="service-tags">
+            <span class="service-tag">Network</span>
+            <span class="service-tag">Architecture</span>
+            <span class="service-tag">Cloud</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💡</div>
+          <div class="service-name">Consultancy &amp; Professional</div>
+          <p class="service-desc">Expert guidance for your business success. Strategic advisory, problem analysis, and implementation roadmaps.</p>
+          <div class="service-tags">
+            <span class="service-tag">Advisory</span>
+            <span class="service-tag">Strategy</span>
+            <span class="service-tag">Planning</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🎓</div>
+          <div class="service-name">Education &amp; Training</div>
+          <p class="service-desc">Comprehensive training programs equipping aspiring IT talent with skills, knowledge, and practical experience to excel.</p>
+          <div class="service-tags">
+            <span class="service-tag">Bootcamp</span>
+            <span class="service-tag">Mentorship</span>
+            <span class="service-tag">Certification</span>
+          </div>
+        </div>
+
+      </div><!-- /services-grid -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ABOUT SECTION
+  ══════════════════════════════════════ -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-inner">
+
+        <div class="about-visual reveal">
+          <div class="about-box about-box-main">
+            <div class="about-hex-grid"></div>
+            <img class="about-center-logo" src="assets/img/logo.png" alt="Nanobyte X LLC" />
+          </div>
+          <div class="about-box about-box-accent"></div>
+          <div class="about-badge">Est. 2024</div>
+        </div>
+
+        <div class="about-text reveal">
+          <div class="section-tag">Who We Are</div>
+          <h2 class="section-title">About <span>Nanobyte X</span></h2>
+          <p class="section-desc">Nanobyte X LLC is an innovative technology company focused on developing smart digital solutions for businesses and organizations. We specialize in website and mobile application development, delivering modern, scalable, and user-friendly platforms that help clients grow in the digital space. Our expertise also includes IT services and technical support, ensuring reliable systems and smooth operations. In addition, Nanobyte X LLC is engaged in research and development in areas such as artificial intelligence and robotics, exploring new technologies that can solve real-world problems and improve efficiency across industries.</p>
+          <ul class="about-list">
+            <li>Application development, web development, and data analysis built for scale.</li>
+            <li>Linux-based infrastructure services with enterprise-grade support.</li>
+            <li>IT training programs designed to cultivate next-generation tech talent.</li>
+            <li>A culture of continuous learning, innovation, and client success.</li>
+          </ul>
+          <div class="about-mission">
+            "Our mission is to empower businesses through innovative, reliable, and scalable IT solutions — and to equip the next generation of IT professionals with the skills they need to thrive."
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EXECUTIVES SECTION
+  ══════════════════════════════════════ -->
+  <section id="executives">
+    <div class="section-inner">
+      <div class="exec-header reveal">
+        <div class="section-tag">Leadership Team</div>
+        <h2 class="section-title">Meet Our <span>Executives</span></h2>
+        <p class="section-desc">The visionary leaders behind Nanobyte X LLC — driving innovation, strategy, and excellence across every initiative.</p>
+      </div>
+      <div class="exec-grid">
+
+        <!-- CARD 1 -->
+        <div class="exec-card">
+          <div class="exec-photo-wrap">
+            <!--
+              REPLACE THIS DIV with:
+              <img class="exec-photo" src="assets/img/exec-ceo.jpg" alt="Jonathan A. Maxwell" />
+            -->
+            <div class="exec-photo-placeholder">CEO</div>
+            <div class="exec-corner"></div>
+            <div class="exec-corner-bl"></div>
+          </div>
+          <div class="exec-info">
+            <div class="exec-name">Michael Owusu Acheampong</div>
+            <div class="exec-position">Founder & Chief Executive Officer</div>
+            <div class="exec-divider"></div>
+            <p class="exec-bio">Visionary leader with 15+ years in enterprise IT strategy. Michael drives Nanobyte X's mission to transform businesses through cutting-edge technology solutions.</p>
+            <div class="exec-socials">
+              <a href="#" class="exec-social" title="LinkedIn">in</a>
+              <a href="#" class="exec-social" title="Twitter">𝕏</a>
+              <a href="#" class="exec-social" title="Email">✉</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="exec-card">
+          <div class="exec-photo-wrap">
+            <div style="text-align: center; margin-bottom: 20px;">
+            <img src="assets/img/CTO1.jpg" alt="CTO" style="width: 350px; height: 250px; object-fit: contain;">
+            </div>
+            <div class="exec-corner"></div>
+            <div class="exec-corner-bl"></div>
+          </div>
+          <div class="exec-info">
+            <div class="exec-name">Louis Tettey Akrono</div>
+            <div class="exec-position">Co-Founder & Chief Technology Officer</div>
+            <div class="exec-divider"></div>
+            <p class="exec-bio">MPhil in Computer Engineering with expertise in AI/ML & IoT systems. Louis architects our flagship platforms and leads R&D into next-generation intelligent applications.</p>
+            <div class="exec-socials">
+              <a href="#" class="exec-social" title="LinkedIn">in</a>
+              <a href="#" class="exec-social" title="Twitter">𝕏</a>
+              <a href="#" class="exec-social" title="Email">✉</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="exec-card">
+          <div class="exec-photo-wrap">
+            <div class="exec-photo-placeholder">COO</div>
+            <div class="exec-corner"></div>
+            <div class="exec-corner-bl"></div>
+          </div>
+          <div class="exec-info">
+            <div class="exec-name">Marcus O. Asante</div>
+            <div class="exec-position">Chief Operating Officer</div>
+            <div class="exec-divider"></div>
+            <p class="exec-bio">Operations excellence specialist with a background in scaling tech startups. Marcus ensures every project is delivered on time, on budget, and beyond expectation.</p>
+            <div class="exec-socials">
+              <a href="#" class="exec-social" title="LinkedIn">in</a>
+              <a href="#" class="exec-social" title="Twitter">𝕏</a>
+              <a href="#" class="exec-social" title="Email">✉</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="exec-card">
+          <div class="exec-photo-wrap">
+            <div class="exec-photo-placeholder">CFO</div>
+            <div class="exec-corner"></div>
+            <div class="exec-corner-bl"></div>
+          </div>
+          <div class="exec-info">
+            <div class="exec-name">Sophia L. Mensah</div>
+            <div class="exec-position">Chief Financial Officer</div>
+            <div class="exec-divider"></div>
+            <p class="exec-bio">CPA and MBA with expertise in fintech and corporate finance. Sophia steers Nanobyte X's financial strategy, ensuring sustainable growth and investor confidence.</p>
+            <div class="exec-socials">
+              <a href="#" class="exec-social" title="LinkedIn">in</a>
+              <a href="#" class="exec-social" title="Twitter">𝕏</a>
+              <a href="#" class="exec-social" title="Email">✉</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="exec-card">
+          <div class="exec-photo-wrap">
+            <div class="exec-photo-placeholder">CMO</div>
+            <div class="exec-corner"></div>
+            <div class="exec-corner-bl"></div>
+          </div>
+          <div class="exec-info">
+            <div class="exec-name">Rafael E. Torres</div>
+            <div class="exec-position">Chief Marketing Officer</div>
+            <div class="exec-divider"></div>
+            <p class="exec-bio">Brand strategist and digital marketing veteran. Rafael crafts the Nanobyte X narrative across global markets, turning technology into compelling human stories.</p>
+            <div class="exec-socials">
+              <a href="#" class="exec-social" title="LinkedIn">in</a>
+              <a href="#" class="exec-social" title="Twitter">𝕏</a>
+              <a href="#" class="exec-social" title="Email">✉</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="exec-card">
+          <div class="exec-photo-wrap">
+            <div class="exec-photo-placeholder">CISO</div>
+            <div class="exec-corner"></div>
+            <div class="exec-corner-bl"></div>
+          </div>
+          <div class="exec-info">
+            <div class="exec-name">Adaeze F. Okafor</div>
+            <div class="exec-position">Chief Information Security Officer</div>
+            <div class="exec-divider"></div>
+            <p class="exec-bio">Certified ethical hacker and cybersecurity expert. Adaeze protects our clients' digital assets with zero-trust frameworks and proactive threat intelligence.</p>
+            <div class="exec-socials">
+              <a href="#" class="exec-social" title="LinkedIn">in</a>
+              <a href="#" class="exec-social" title="Twitter">𝕏</a>
+              <a href="#" class="exec-social" title="Email">✉</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /exec-grid -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       MISSION / VISION / VALUES
+  ══════════════════════════════════════ -->
+  <section id="mission">
+    <div class="mission-inner">
+      <div class="mission-card reveal">
+        <span class="mission-icon">🚀</span>
+        <div class="mission-title">Our Vision</div>
+        <p class="mission-text">To be the most trusted technology partner for businesses on every continent — pioneering solutions that define the digital age.</p>
+      </div>
+      <div class="mission-card reveal">
+        <span class="mission-icon">🎯</span>
+        <div class="mission-title">Our Mission</div>
+        <p class="mission-text">Empowering businesses through innovative, reliable, and scalable IT solutions while cultivating the next generation of technology leaders.</p>
+      </div>
+      <div class="mission-card reveal">
+        <span class="mission-icon">💎</span>
+        <div class="mission-title">Our Values</div>
+        <p class="mission-text">Integrity, innovation, and impact. We build lasting partnerships rooted in transparency, excellence, and a relentless commitment to results.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT SECTION
+  ══════════════════════════════════════ -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="contact-inner">
+
+        <div class="reveal">
+          <div class="section-tag">Get In Touch</div>
+          <h2 class="section-title">Let's Build<br><span>Together</span></h2>
+          <p class="section-desc" style="margin-bottom:40px;">Ready to transform your business? Reach out and let's craft a tailored technology roadmap for your goals.</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">✉</div>
+              <div>
+                <div class="contact-detail-label">Email</div>
+                <div class="contact-detail-val">nanobytexllc@gmail.com</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <div class="contact-detail-label">Phone</div>
+                <div class="contact-detail-val">+233 50 595 7297 / +233 55 196 8242</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div class="contact-detail-label">Headquarters</div>
+                <div class="contact-detail-val">Ghana</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <div class="contact-detail-label">Business Hours</div>
+                <div class="contact-detail-val">Mon–Fri, 8:00 AM – 5:00 PM EST</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHP Form -->
+        <div class="reveal">
+          <form class="contact-form" action="php/contact.php" method="POST" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+233 55 000 0000" />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interest</label>
+              <select id="service" name="service" required>
+                <option value="">— Select a Service —</option>
+                <option value="app-dev">Application Development</option>
+                <option value="ai-ml">Data Analytics &amp; AI/ML</option>
+                <option value="web-dev">Web Development</option>
+                <option value="maintenance">Application Maintenance</option>
+                <option value="lead-gen">AI Lead Generation</option>
+                <option value="linux">Linux Open Source</option>
+                <option value="it-design">IT Solution Designing</option>
+                <option value="consultancy">Consultancy &amp; Professional</option>
+                <option value="education">Education &amp; Training</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project goals and how we can help..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" id="submitBtn">Send Message ›</button>
+            <div id="formSuccess" class="form-msg form-msg--success" style="display:none;">✓ MESSAGE SENT — We'll respond within 24 hours.</div>
+            <div id="formError" class="form-msg form-msg--error" style="display:none;">✗ Something went wrong. Please try again.</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/img/logo.jpeg" alt="Nanobyte X LLC" />
+          <span class="footer-logo-text">Nanobyte X LLC</span>
+        </div>
+        <p class="footer-desc">Transforming businesses through technology. Expert services in consulting, IT, application development, and management.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">App Development</a></li>
+          <li><a href="#services">AI &amp; Analytics</a></li>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">IT Solutions</a></li>
+          <li><a href="#services">Linux OS</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#executives">Leadership</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Nanobyte X LLC. All rights reserved.</span>
+      <span>Transforming Businesses Through Technology</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/form.js"></script>
+
+</body>
+</html>

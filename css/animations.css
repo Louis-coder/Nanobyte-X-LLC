@@ -1,0 +1,108 @@
+/* ═══════════════════════════════════════════════════════
+   NANOBYTE X LLC — ANIMATIONS
+   css/animations.css
+   ═══════════════════════════════════════════════════════ */
+
+/* ── KEYFRAMES ── */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gridShift {
+  from { background-position: 0 0; }
+  to   { background-position: 60px 60px; }
+}
+
+@keyframes heroPulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1);   opacity: 0.8; }
+  50%      { transform: translate(-50%, -50%) scale(1.2); opacity: 1;   }
+}
+
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+
+@keyframes spinIcon {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes cardReveal {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+@keyframes borderGlow {
+  0%, 100% { box-shadow: 0 0 8px  var(--glow); }
+  50%      { box-shadow: 0 0 28px var(--glow); }
+}
+
+@keyframes scanLine {
+  0%   { top: -2px; }
+  100% { top: 100%; }
+}
+
+/* ── SERVICE / EXEC CARD STAGGER ── */
+.service-card,
+.exec-card {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.service-card.visible,
+.exec-card.visible {
+  animation: cardReveal 0.6s ease forwards;
+}
+
+/* ── GOLD SHIMMER ON NAV CTA ── */
+.nav-cta {
+  background-size: 200% auto;
+}
+
+/* ── SCAN-LINE EFFECT on About Box ── */
+.about-box-main::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(200,146,42,0.4), transparent);
+  animation: scanLine 3.5s linear infinite;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* ── PULSING BORDER ON ACTIVE NAV LINK ── */
+.nav-links a.active {
+  color: var(--gold);
+}
+
+.nav-links a.active::after {
+  right: 0;
+}
+
+/* ── HOVER GLOW on service icon ── */
+.service-card:hover .service-icon {
+  animation: borderGlow 1.5s ease infinite;
+}

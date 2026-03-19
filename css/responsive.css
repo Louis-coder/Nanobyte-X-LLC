@@ -1,0 +1,146 @@
+/* ═══════════════════════════════════════════════════════
+   NANOBYTE X LLC — RESPONSIVE STYLES
+   css/responsive.css
+   ═══════════════════════════════════════════════════════ */
+
+/* ── TABLET (≤ 1024px) ── */
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  .hero-stats {
+    gap: 36px;
+  }
+
+  .about-inner {
+    gap: 50px;
+  }
+}
+
+/* ── MOBILE LANDSCAPE / SMALL TABLET (≤ 900px) ── */
+@media (max-width: 900px) {
+
+  /* Hide desktop nav, show hamburger */
+  .nav-links,
+  .nav-cta {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* About */
+  .about-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .about-visual {
+    height: 300px;
+  }
+
+  .about-badge {
+    right: 10px;
+  }
+
+  /* Contact */
+  .contact-inner {
+    grid-template-columns: 1fr;
+  }
+
+  /* Mission */
+  .mission-inner {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  /* Services */
+  .services-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Form row */
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── MOBILE PORTRAIT (≤ 580px) ── */
+@media (max-width: 580px) {
+
+  .section-inner {
+    padding: 70px 5vw;
+  }
+
+  .hero-stats {
+    gap: 28px;
+  }
+
+  .stat-num {
+    font-size: 1.7rem;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+    clip-path: none;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exec-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1.hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .about-badge {
+    display: none;
+  }
+
+  .ticker-item {
+    padding: 0 22px;
+  }
+}
+
+/* ── VERY SMALL (≤ 360px) ── */
+@media (max-width: 360px) {
+  nav {
+    padding: 0 4vw;
+  }
+
+  .nav-logo-text {
+    font-size: 0.85rem;
+  }
+}
